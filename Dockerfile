@@ -25,7 +25,8 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libfreetype6-dev \
     pkg-config \
-    libsodium-dev
+    libsodium-dev \
+    cron
 
 RUN sed -i 's/^listen = .*/listen = 9000/' /usr/local/etc/php-fpm.d/www.conf
 

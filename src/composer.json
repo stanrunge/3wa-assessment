@@ -18,9 +18,10 @@
     },
     "version": "2.4.8-p1",
     "require": {
-        "magento/product-community-edition": "2.4.8-p1",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
-        "magento/composer-root-update-plugin": "^2.0.4"
+        "magento/composer-root-update-plugin": "^2.0.4",
+        "magento/product-community-edition": "2.4.8-p1",
+        "swissup/absolute-metapackage": "1.5.3"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -75,10 +76,13 @@
         {
             "type": "composer",
             "url": "https://repo.magento.com/"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org/"
         }
     ],
     "extra": {
         "magento-force": "override"
     }
 }
-
